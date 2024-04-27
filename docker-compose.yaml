@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "3000:80"
+  localtunnel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: lt --port 3000 --subdomain yourdesiredsubdomain
