@@ -8,4 +8,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: lt --port 3000 --subdomain yourdesiredsubdomain
+    command: lt --port 3000 --subdomain my-better-nginx-docker-site
